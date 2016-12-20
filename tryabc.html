@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADD/DELETE ITEMS</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 95px;
+            text-decoration: none;
+        }
+        li{
+            display: inline-block;
+        }
+        .active
+        {
+            background-color:navy;
+        }
+        .vinowaseem
+        {
+            height:400px;
+            width:540px;
+            margin-top:60px;
+            margin-left:70px;
+            border:3px solid olivedrab;
+        }
+        .ranjithwaseem
+        {
+            height:400px;
+            width:540px;
+            margin-top:-405px;
+            margin-left:745px;
+            border:3px solid sandybrown;
+        }
+        .arun{
+            background-color:mediumvioletred;
+            color: white;
+            height:8%;
+            width:37%;
+            font-size: 17px;
+            border: 2px solid;
+        }
+        .bb {
+            display: inline-block;
+            border-radius: 4px;
+            background-color:darkred;
+            border: none;
+            color: ghostwhite;
+            text-align: center;
+            font-size: 18px;
+            padding:3px;
+            width: 80px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .bb span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+        }
+
+        .bb span:after {
+            content:none;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+        }
+        .bb:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        video#bgVideo {
+            position: absolute; // Play the video in full screen mode
+        top: 0px;
+            left: 0px;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; // Put the video behind all other elements
+        }
+
+        @media only screen and (max-width: 768px) {
+            video {
+                display: none;
+            }
+
+            body {
+                background-image: url("k49.jpg");
+            }
+        }
+    </style>
+</head>
+<body>
+<video id="bgVideo" autoplay loop poster="k49.jpg">
+    <!-- Video is embedded in the WEBM format -->
+    <source src="infile2_login11.mp4" type="video/mp4">
+</video>
+<ul>
+    <li><a class="active" href="" style="font-size:20px;">ADD /DELETE ITEMS LIST</a></li>
+    <li style="background-color:crimson;"><a href="todaymenus.php" style="font-size:20px;">TODAY MENUS LIST</a></li>
+    <li><a href=""  style="font-size:20px;background-color:deepskyblue;">OFFERS LIST</a></li>
+    <li style="background-color:darkmagenta;"><a href="" style="font-size:20px;">RECIEVE ORDER ITEMS</a></li>
+</ul>
+<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label style="color:lawngreen;font-size:30px;"> ADD ITEMS</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label style="color:lawngreen;font-size:30px;"> DELETE ITEMS</label>
+    <form>
+        <div class="vinowaseem">
+            <font color="sp">VIKIVINO</font>
+        <br> <br> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="color:salmon;font-size:20px;"> ITEM NAME</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" style="font-size:15px; background-color:blanchedalmond" name="insitemname">
+        <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="color:darkblue;font-size:20px;"> CATEGORY</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select  class="arun" name="inscategory">
+            <option style="background-color: azure;color:black;" value="BREAKFAST">BREAKFAST</option>
+            <option style="background-color: azure;color:black;" value="LAUNCH">LAUNCH</option>
+            <option style="background-color: azure;color:black;" value="DINNER">DINNER</option>
+            <option style="background-color: azure;color:black;" value="SNACKS">SNACKS</option>
+            <option style="background-color: azure;color:black;" value="COOLS&BEVERAGES">COOLS&BEVERAGES</option>
+        </select>
+        <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="color:darkorange;font-size:20px;">ITEMTYPE</label>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select  class="arun" name="insitemtype">
+            <option style="background-color: azure;color:black;" value="REGULAR">REGULAR</option>
+            <option style="background-color: azure;color:black;" value="IRREGULAR">IRREGULAR</option>
+            <option style="background-color: azure;color:black;" value="NONE">NONE</option>
+        </select>
+        <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="color:darkblue;font-size:20px;">PRICE</label>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="font-size:15px; background-color:blanchedalmond" type="password" name="insprice"><br>
+        <br><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span><input type="submit"  class="bb"  style="vertical-align:middle" name="ins" value="INSERT"></span>&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="ranjithwaseem">
+            <br> <br> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label style="color:darkblue;font-size:20px;"> ITEM NAME</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" style="font-size:15px; background-color:blanchedalmond" name="delitemname">
+            <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label style="color:darkblue;font-size:20px;"> CATEGORY</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select  class="arun" name="delcategory">
+                <option style="background-color: azure;color:black;" value="BREAKFAST">BREAKFAST</option>
+                <option style="background-color: azure;color:black;" value="LUNCH">LUNCH</option>
+                <option style="background-color: azure;color:black;" value="DINNER">DINNER</option>
+                <option style="background-color: azure;color:black;" value="SNACKS">SNACKS</option>
+                <option style="background-color: azure;color:black;" value="COOLS&BEVERAGES">COOLS&BEVERAGES</option>
+            </select>
+            <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label style="color:darkblue;font-size:20px;">ITEMTYPE</label>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select  class="arun" name="delitemtype">
+                <option style="background-color: azure;color:black;" value="REGULAR">REGULAR</option>
+                <option style="background-color: azure;color:black;" value="IRREGULAR">IRREGULAR</option>
+                <option style="background-color: azure;color:black;" value="NONE">NONE</option>
+            </select>
+            <br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span><input type="submit"  class="bb" name="del"  style="vertical-align:middle" value="DELETE"></span>&nbsp;&nbsp;&nbsp;
+        </div>
+
+    </form>
+</body>
+</html>
+
